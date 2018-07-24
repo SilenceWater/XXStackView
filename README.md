@@ -27,3 +27,4 @@ shichang.wang, shichang.wang@wwwarehouse.com
 ## License
 
 XXStackView is available under the MIT license. See the LICENSE file for more info.
+# XXStackView

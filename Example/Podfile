@@ -6,42 +6,10 @@ inhibit_all_warnings!
 
 target 'XXStackView_Example' do
   pod 'XXStackView', :path => '../'
-
-# -------------------------  变动较大的采用地址引入  -----------------------
-pod 'SAKit'#, :git => 'ssh://git@192.168.6.115:7999/xdwios/sakit.git', :branch => 'dev'
-
-pod 'SABottomMenu'#, :git => 'ssh://git@192.168.6.115:7999/xdwios/sabottommenu.git'
-
-pod 'SAModuleService', :git => 'ssh://git@192.168.6.115:7999/xdwios/samoduleservice.git', :branch => '0627'
-
-# 以下只在demo中使用，无需依赖
-pod 'SAHome'#, :git => 'ssh://git@192.168.6.115:7999/xdwios/sahome.git', :branch => 'TaskOnly'
-
-pod 'SALogin'#, :git => 'ssh://git@192.168.6.115:7999/xdwios/salogin.git'
-
-pod 'SATaskCenter'#, :git => 'ssh://git@192.168.6.115:7999/xdwios/sataskcenter.git'
-
-pod 'SAInfoCenter'#, :git => 'ssh://git@192.168.6.115:7999/xdwios/sainfocenter.git', :branch => 'TaskOnly'
-
-
-pod 'SAMine'#, :git => 'ssh://git@192.168.6.115:7999/xdwios/samine.git'
-
-pod 'SANetworkHUD'#, :git => 'ssh://git@192.168.6.115:7999/xdwios/sanetworkhud.git', :branch => 'zhigang'
-
-pod 'SADataCollection/SANaturalDataModule'
-
-pod 'SAHardware'#, :git => 'ssh://git@192.168.6.115:7999/xdwios/SAHardware.git'
-
-pod 'SAAudio'#, :git => 'ssh://git@192.168.6.115:7999/xdwios/SAHardware.git'
-
-pod 'SAAreaAddress'#, :git => 'ssh://git@192.168.6.115:7999/xdwios/saaudio.git'
-
-pod 'SAConfig'#, :subspecs => ['SAWechatConfig', 'SAAMapConfig', 'SAQQConfig']
+  
 
 # ------------------  变动较小的组件或者是其他三方库引入版本号 -----------------
-  pod 'SAScan'
-  pod 'IQKeyboardManager', '4.0.10'
-  pod 'JPush', '3.0.6'
+
 target 'XXStackView_Tests' do
     inherit! :search_paths
 

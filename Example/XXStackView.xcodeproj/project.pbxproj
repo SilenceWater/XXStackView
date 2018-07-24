@@ -23,8 +23,11 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		C44FC7481FAC66E300D29107 /* SAApplicationProtcol.m in Sources */ = {isa = PBXBuildFile; fileRef = C44FC7471FAC66E300D29107 /* SAApplicationProtcol.m */; };
 		D4A9B23937DE60E3E50038E7 /* libPods-XXStackView_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C0F8A8F6DD824FE7B0CC2FF /* libPods-XXStackView_Tests.a */; };
+		EB837D6D2107018F00771B60 /* XXCeshiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB837D682107018F00771B60 /* XXCeshiViewController.m */; };
+		EB837D6E2107018F00771B60 /* XXPlaygroundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB837D6A2107018F00771B60 /* XXPlaygroundViewController.m */; };
+		EB837D6F2107018F00771B60 /* XXTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB837D6C2107018F00771B60 /* XXTestViewController.m */; };
+		EB837D712107019E00771B60 /* classdata.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB837D702107019D00771B60 /* classdata.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +43,7 @@
 /* Begin PBXFileReference section */
 		3922B22A88AD330561FB4DE0 /* Pods-XXStackView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XXStackView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XXStackView_Tests/Pods-XXStackView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		539343E4ABDC1F4A6A9356C4 /* Pods-XXStackView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XXStackView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-XXStackView_Example/Pods-XXStackView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		5DC51D03102268CF120E0703 /* XXStackView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = XXStackView.podspec; path = ../XXStackView.podspec; sourceTree = "<group>"; };
+		5DC51D03102268CF120E0703 /* XXStackView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = XXStackView.podspec; path = ../XXStackView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6003F58A195388D20070C39A /* XXStackView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XXStackView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,13 +66,18 @@
 		6C0F8A8F6DD824FE7B0CC2FF /* libPods-XXStackView_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XXStackView_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		87B9E2AA153DA9DCB094F7DF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		9F2CF81DE82A218BAF82DB16 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		87B9E2AA153DA9DCB094F7DF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		9F2CF81DE82A218BAF82DB16 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A3EA99C01CA485238E8B3486 /* Pods-XXStackView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XXStackView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XXStackView_Tests/Pods-XXStackView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B86BA586BC33DE15D6B27060 /* Pods-XXStackView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XXStackView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XXStackView_Example/Pods-XXStackView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		C44FC7461FAC66E300D29107 /* SAApplicationProtcol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAApplicationProtcol.h; sourceTree = "<group>"; };
-		C44FC7471FAC66E300D29107 /* SAApplicationProtcol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAApplicationProtcol.m; sourceTree = "<group>"; };
 		DF4DE5789D28F90BA79D95AA /* libPods-XXStackView_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XXStackView_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB837D672107018F00771B60 /* XXCeshiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXCeshiViewController.h; sourceTree = "<group>"; };
+		EB837D682107018F00771B60 /* XXCeshiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXCeshiViewController.m; sourceTree = "<group>"; };
+		EB837D692107018F00771B60 /* XXPlaygroundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXPlaygroundViewController.h; sourceTree = "<group>"; };
+		EB837D6A2107018F00771B60 /* XXPlaygroundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXPlaygroundViewController.m; sourceTree = "<group>"; };
+		EB837D6B2107018F00771B60 /* XXTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXTestViewController.h; sourceTree = "<group>"; };
+		EB837D6C2107018F00771B60 /* XXTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXTestViewController.m; sourceTree = "<group>"; };
+		EB837D702107019D00771B60 /* classdata.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = classdata.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,15 +154,15 @@
 		6003F593195388D20070C39A /* Example for XXStackView */ = {
 			isa = PBXGroup;
 			children = (
+				EB837D662107018F00771B60 /* SATestViewControllers */,
 				6003F59C195388D20070C39A /* XXAppDelegate.h */,
 				6003F59D195388D20070C39A /* XXAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				C44FC7461FAC66E300D29107 /* SAApplicationProtcol.h */,
-				C44FC7471FAC66E300D29107 /* SAApplicationProtcol.m */,
 				6003F5A5195388D20070C39A /* XXViewController.h */,
 				6003F5A6195388D20070C39A /* XXViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
+				EB837D702107019D00771B60 /* classdata.plist */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			name = "Example for XXStackView";
@@ -199,6 +207,19 @@
 				87B9E2AA153DA9DCB094F7DF /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		EB837D662107018F00771B60 /* SATestViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EB837D672107018F00771B60 /* XXCeshiViewController.h */,
+				EB837D682107018F00771B60 /* XXCeshiViewController.m */,
+				EB837D692107018F00771B60 /* XXPlaygroundViewController.h */,
+				EB837D6A2107018F00771B60 /* XXPlaygroundViewController.m */,
+				EB837D6B2107018F00771B60 /* XXTestViewController.h */,
+				EB837D6C2107018F00771B60 /* XXTestViewController.m */,
+			);
+			path = SATestViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,6 +309,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB837D712107019E00771B60 /* classdata.plist in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
@@ -452,10 +474,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C44FC7481FAC66E300D29107 /* SAApplicationProtcol.m in Sources */,
+				EB837D6F2107018F00771B60 /* XXTestViewController.m in Sources */,
 				6003F59E195388D20070C39A /* XXAppDelegate.m in Sources */,
+				EB837D6D2107018F00771B60 /* XXCeshiViewController.m in Sources */,
 				6003F5A7195388D20070C39A /* XXViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				EB837D6E2107018F00771B60 /* XXPlaygroundViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

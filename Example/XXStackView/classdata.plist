@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<array>
+		<dict>
+			<key>titleName</key>
+			<string>测试1</string>
+			<key>className</key>
+			<string>XXTestViewController</string>
+		</dict>
+		<dict>
+			<key>titleName</key>
+			<string>测试2</string>
+			<key>className</key>
+			<string>XXCeshiViewController</string>
+		</dict>
+		<dict>
+			<key>titleName</key>
+			<string>测试3</string>
+			<key>className</key>
+			<string>XXPlaygroundViewController</string>
+		</dict>
+	</array>
+</array>
+</plist>

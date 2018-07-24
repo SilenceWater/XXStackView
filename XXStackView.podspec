@@ -20,16 +20,7 @@ TODO: Add long description of the pod here.
   s.source_files = 'XXStackView/Classes/**/*.{h,m}'
 # s.resources = 'XXStackView/Assets/XXStackView.xcassets'
 
-    s.dependency "SAKit"
-    s.dependency "SANetwork"
-    s.dependency "SAConfig"
-    s.dependency "SALocalizable"
-    s.dependency "SAModuleService"
-    s.dependency "SAGlobal"
-    s.dependency "SANetworkHUD"
-#   s.dependency "SASocial"
-    s.dependency "SASpecialRequest"
-#    s.dependency "SAAudio"
-#   s.dependency "SAHardware"
+    s.dependency "Masonry"
+
 
 end

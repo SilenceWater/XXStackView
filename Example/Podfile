@@ -1,5 +1,4 @@
 source 'https://github.com/CocoaPods/Specs.git'
-source 'ssh://git@192.168.6.115:7999/xdwios/saspecs.git'
 
 platform :ios, '9.0'
 inhibit_all_warnings!

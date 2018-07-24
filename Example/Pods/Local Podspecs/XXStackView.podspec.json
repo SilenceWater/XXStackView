@@ -1,0 +1,25 @@
+{
+  "name": "XXStackView",
+  "version": "1.1.0",
+  "summary": "A short description of XXStackView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "http://bitbucket.wwwarehouse.com/projects/XDWIOS/repos/XXStackView/browse",
+  "license": "MIT",
+  "authors": {
+    "shichang.wang": "shichang.wang@wwwarehouse.com"
+  },
+  "source": {
+    "git": "ssh://git@192.168.6.115:7999/xdwios/XXStackView.git",
+    "tag": "1.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "requires_arc": true,
+  "source_files": "XXStackView/Classes/**/*.{h,m}",
+  "dependencies": {
+    "Masonry": [
+
+    ]
+  }
+}

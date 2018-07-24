@@ -1,0 +1,19 @@
+PODS:
+  - Masonry (1.1.0)
+  - XXStackView (1.1.0):
+    - Masonry
+
+DEPENDENCIES:
+  - XXStackView (from `../`)
+
+EXTERNAL SOURCES:
+  XXStackView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  XXStackView: 886418f62778c633cbfafcebedd5be0ee4696e95
+
+PODFILE CHECKSUM: 79a63f6a67fb0347fc8efb0cbda3d55d4b61cf1e
+
+COCOAPODS: 1.4.0

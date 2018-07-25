@@ -9,6 +9,10 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+![插入相同子View](/XXResources/test1.gif)
+![插入不同子View](/XXResources/test2.gif)
+
+
 ## Requirements
 
 ## Installation
@@ -22,9 +26,9 @@ pod 'XXStackView'
 
 ## Author
 
-shichang.wang, shichang.wang@wwwarehouse.com
+shichang.wang
 
 ## License
 
 XXStackView is available under the MIT license. See the LICENSE file for more info.
-# XXStackView
+

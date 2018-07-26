@@ -11,6 +11,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ![插入相同子View](/XXResources/test1.gif)
 ![插入不同子View](/XXResources/test2.gif)
+![插入相同子View加了动画](/XXResources/test3.gif)
+![插入不同子View加了动画](/XXResources/test4.gif)
 
 
 ## Requirements

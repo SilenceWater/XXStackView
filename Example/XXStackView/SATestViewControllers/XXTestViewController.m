@@ -49,18 +49,26 @@
 
 - (void)pressAddButtonAction:(UIButton *)btn {
     if (self.stackView.arrangedSubviews.count > 10) return;
-    UIView *view = [self createOtherView];
-    [self.stackView insertArrangedSubview:view atIndex:0];
-    [self.stackView addArrangedSubview:view];
+    [UIView animateWithDuration:0.25 animations:^{
+        UIView *view = [self createOtherView];
+        [self.stackView insertArrangedSubview:view atIndex:0];
+        [self.stackView addArrangedSubview:view];
+        [self.stackView layoutIfNeeded];
+    }];
+    
 }
 
 - (void)pressDeleteButtonAction:(UIButton *)btn {
     if (!self.stackView.arrangedSubviews.count) return;
-    UIView *tempView = self.stackView.arrangedSubviews.lastObject;
+    [UIView animateWithDuration:0.25 animations:^{
+        UIView *tempView = self.stackView.arrangedSubviews.lastObject;
 #warning 注意这里不可以直接 removeArrangedSubview：self.stackView.arrangedSubviews.lastObject！！！
-    [self.stackView removeArrangedSubview:tempView];
+        [self.stackView removeArrangedSubview:tempView];
 #warning 注意stackView removeArrangedSubview：之后stackView还是会持有tempView的 所以要在这里removeFromSuperView或hidden掉！！！
-    [tempView removeFromSuperview];
+        [tempView removeFromSuperview];
+        [self.stackView layoutIfNeeded];
+    }];
+    
 }
 
 - (void)pressChangeButtonAction:(UIButton *)btn {

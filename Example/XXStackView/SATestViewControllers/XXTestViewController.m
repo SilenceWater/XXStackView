@@ -64,60 +64,69 @@
 }
 
 - (void)pressChangeButtonAction:(UIButton *)btn {
-    NSMutableString *tip = [[NSMutableString alloc]initWithString:@"布局方向类型："];
-    if (self.stackView.axis == UILayoutConstraintAxisVertical) {
-        self.stackView.axis = UILayoutConstraintAxisHorizontal;
-        [tip appendString:@"UILayoutConstraintAxisHorizontal"];
-    }else {
-        self.stackView.axis = UILayoutConstraintAxisVertical;
-        [tip appendString:@"UILayoutConstraintAxisVertical"];
-    }
-    self.axisLabel.text = tip;
+    [UIView animateWithDuration:0.25 animations:^{
+        NSMutableString *tip = [[NSMutableString alloc]initWithString:@"布局方向类型："];
+        if (self.stackView.axis == UILayoutConstraintAxisVertical) {
+            self.stackView.axis = UILayoutConstraintAxisHorizontal;
+            [tip appendString:@"UILayoutConstraintAxisHorizontal"];
+        }else {
+            self.stackView.axis = UILayoutConstraintAxisVertical;
+            [tip appendString:@"UILayoutConstraintAxisVertical"];
+        }
+        self.axisLabel.text = tip;
+    }];
+    
 }
 
 - (void)pressChangeAlignmentButtonAction:(UIButton *)btn {
-    NSMutableString *tip = [[NSMutableString alloc]initWithString:@"对齐类型："];
-    if (self.stackView.alignment == UIStackViewAlignmentFill) {
-        self.stackView.alignment = UIStackViewAlignmentLeading;
-        [tip appendString:@"UIStackViewAlignmentLeading"];
-    }else if (self.stackView.alignment== UIStackViewAlignmentLeading) {
-        self.stackView.alignment = UIStackViewAlignmentFirstBaseline;
-        [tip appendString:@"UIStackViewAlignmentFirstBaseline"];
-    }else if (self.stackView.alignment == UIStackViewAlignmentFirstBaseline) {
-        self.stackView.alignment = UIStackViewAlignmentCenter;
-        [tip appendString:@"UIStackViewAlignmentCenter"];
-    }else if (self.stackView.alignment == UIStackViewAlignmentCenter) {
-        self.stackView.alignment = UIStackViewAlignmentTrailing;
-        [tip appendString:@"UIStackViewAlignmentTrailing"];
-    }else if (self.stackView.alignment == UIStackViewAlignmentTrailing) {
-        self.stackView.alignment = UIStackViewAlignmentLastBaseline;
-        [tip appendString:@"UIStackViewAlignmentLastBaseline"];
-    }else if (self.stackView.alignment == UIStackViewAlignmentLastBaseline) {
-        self.stackView.alignment = UIStackViewAlignmentFill;
-        [tip appendString:@"UIStackViewAlignmentFill"];
-    }
-    self.alignmentLabel.text = tip;
+    [UIView animateWithDuration:0.25 animations:^{
+        NSMutableString *tip = [[NSMutableString alloc]initWithString:@"对齐类型："];
+        if (self.stackView.alignment == UIStackViewAlignmentFill) {
+            self.stackView.alignment = UIStackViewAlignmentLeading;
+            [tip appendString:@"UIStackViewAlignmentLeading"];
+        }else if (self.stackView.alignment== UIStackViewAlignmentLeading) {
+            self.stackView.alignment = UIStackViewAlignmentFirstBaseline;
+            [tip appendString:@"UIStackViewAlignmentFirstBaseline"];
+        }else if (self.stackView.alignment == UIStackViewAlignmentFirstBaseline) {
+            self.stackView.alignment = UIStackViewAlignmentCenter;
+            [tip appendString:@"UIStackViewAlignmentCenter"];
+        }else if (self.stackView.alignment == UIStackViewAlignmentCenter) {
+            self.stackView.alignment = UIStackViewAlignmentTrailing;
+            [tip appendString:@"UIStackViewAlignmentTrailing"];
+        }else if (self.stackView.alignment == UIStackViewAlignmentTrailing) {
+            self.stackView.alignment = UIStackViewAlignmentLastBaseline;
+            [tip appendString:@"UIStackViewAlignmentLastBaseline"];
+        }else if (self.stackView.alignment == UIStackViewAlignmentLastBaseline) {
+            self.stackView.alignment = UIStackViewAlignmentFill;
+            [tip appendString:@"UIStackViewAlignmentFill"];
+        }
+        self.alignmentLabel.text = tip;
+    }];
+    
 }
 
 - (void)pressChangeDistributionButtonAction:(UIButton *)btn {
-    NSMutableString *tip = [[NSMutableString alloc]initWithString:@"视图分布类型："];
-    if (self.stackView.distribution == UIStackViewDistributionFillEqually) {
-        self.stackView.distribution = UIStackViewDistributionFillProportionally;
-        [tip appendString:@"UIStackViewDistributionFillProportionally"];
-    }else if (self.stackView.distribution == UIStackViewDistributionFillProportionally) {
-        self.stackView.distribution = UIStackViewDistributionEqualSpacing;
-        [tip appendString:@"UIStackViewDistributionEqualSpacing"];
-    }else if (self.stackView.distribution == UIStackViewDistributionEqualSpacing) {
-        self.stackView.distribution = UIStackViewDistributionEqualCentering;
-        [tip appendString:@"UIStackViewDistributionEqualCentering"];
-    }else if (self.stackView.distribution == UIStackViewDistributionEqualCentering) {
-        self.stackView.distribution = UIStackViewDistributionFill;
-        [tip appendString:@"UIStackViewDistributionFill"];
-    }else if (self.stackView.distribution == UIStackViewDistributionFill) {
-        self.stackView.distribution = UIStackViewDistributionFillEqually;
-        [tip appendString:@"UIStackViewDistributionFillEqually"];
-    }
-    self.distributionLabel.text = tip;
+    
+    [UIView animateWithDuration:0.25 animations:^{
+        NSMutableString *tip = [[NSMutableString alloc]initWithString:@"视图分布类型："];
+        if (self.stackView.distribution == UIStackViewDistributionFillEqually) {
+            self.stackView.distribution = UIStackViewDistributionFillProportionally;
+            [tip appendString:@"UIStackViewDistributionFillProportionally"];
+        }else if (self.stackView.distribution == UIStackViewDistributionFillProportionally) {
+            self.stackView.distribution = UIStackViewDistributionEqualSpacing;
+            [tip appendString:@"UIStackViewDistributionEqualSpacing"];
+        }else if (self.stackView.distribution == UIStackViewDistributionEqualSpacing) {
+            self.stackView.distribution = UIStackViewDistributionEqualCentering;
+            [tip appendString:@"UIStackViewDistributionEqualCentering"];
+        }else if (self.stackView.distribution == UIStackViewDistributionEqualCentering) {
+            self.stackView.distribution = UIStackViewDistributionFill;
+            [tip appendString:@"UIStackViewDistributionFill"];
+        }else if (self.stackView.distribution == UIStackViewDistributionFill) {
+            self.stackView.distribution = UIStackViewDistributionFillEqually;
+            [tip appendString:@"UIStackViewDistributionFillEqually"];
+        }
+        self.distributionLabel.text = tip;
+    }];
 }
 
 #pragma mark -
